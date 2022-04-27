@@ -2,7 +2,7 @@
 
 module.exports = {
     base: '/vue-validators/',
-    title: 'vueValidators',
+    title: '@obewds/vue-validators',
     description: 'A documentation site for the vue-validators data sets',
     markdown: {
       lineNumbers: true,
