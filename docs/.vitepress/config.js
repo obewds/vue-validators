@@ -2,8 +2,8 @@
 
 module.exports = {
     base: '/vue-validators/',
-    title: 'VueValidators.vue',
-    description: 'A documentation site for the VueValidators component',
+    title: 'vueValidators',
+    description: 'A documentation site for the vue-validators data sets',
     markdown: {
       lineNumbers: true,
     },

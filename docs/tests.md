@@ -6,14 +6,9 @@ head:
 ---
 
 
-::: danger
-This is an example GitHub Pages site and is NOT intended for actual use in real projects/products!
-:::
 
 
-
-
-# VueValidators.vue Tests
+# vue-validators Tests
 
 
 
@@ -28,4 +23,4 @@ This is an example GitHub Pages site and is NOT intended for actual use in real 
 
 ## Vitest Tests
 
-<<< @/../tests/VueValidators.test.js
+<<< @/../tests/vue-validators.test.js

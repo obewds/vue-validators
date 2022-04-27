@@ -12,8 +12,7 @@
     ".": {
       "import": "./dist/vue-validators.es.js",
       "require": "./dist/vue-validators.umd.js"
-    },
-    "./src": "./src/components/VueValidators.vue"
+    }
   },
   "files": [
     "dist",

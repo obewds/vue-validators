@@ -6,14 +6,9 @@ head:
 ---
 
 
-::: danger
-This is an example GitHub Pages site and is NOT intended for actual use in real projects/products!
-:::
+# vue-validators
 
-
-# VueValidators.vue
-
-Welcome to the docs page for OBE:WDS's `VueValidators.vue` component for [Vue.js](https://vuejs.org/)!
+Welcome to the docs page for OBE:WDS's `vue-validators` data sets for [Vue.js](https://vuejs.org/)!
 
 
 
@@ -32,22 +27,26 @@ npm install @obewds/vue-validators --save-dev
 
 
 
-### Template syntax
-
-```html{2}
-<template>
-    <VueValidators/>
-</template>
-```
-
-
-
-
 ### Script setup syntax
 
-```html{2}
+```html{3-7,10, 15}
 <script setup lang="ts">
-    import { VueValidators } from '@obewds/vue-validators'
+    // import a validator individually
+    import { blockLevelElementTags } from '@obewds/vue-validators'
+    import { elementTags } from '@obewds/vue-validators'
+    import { emptyElementTags } from '@obewds/vue-validators'
+    import { inlineLevelElementTags } from '@obewds/vue-validators'
+    import { unsupportedElementTags } from '@obewds/vue-validators'
+
+    // import validators together
+    import { blockLevelElementTags, elementTags, emptyElementTags, inlineLevelElementTags, unsupportedElementTags } from '@obewds/vue-validators'
+
+    const props = defineProps({
+        tag: {
+            type: String,
+            validator: (prop: string): boolean => (blockLevelElementTags).includes(prop),
+        },
+    })
 </script>
 ```
 
@@ -59,72 +58,18 @@ npm install @obewds/vue-validators --save-dev
 ```html{3,6}
 <script lang="ts">
     import { defineComponent } from 'vue'
-    import { VueValidators } from '@obewds/vue-validators'
+    import { elementTags } from '@obewds/vue-validators'
 
     export default defineComponent({
-        components: { VueValidators }
+        props: {
+            tag: {
+                type: String,
+                validator: (prop: string): boolean => (elementTags).includes(prop),
+            },
+        },
     })
 </script>
 ```
-
-
-
-
-## Props
-
-
-
-
-### text
-
-:white_check_mark: - Type `String`  
-:x: - Not Required  
-:x: - Doesn't Validate
-
-
-```html{2}
-<template>
-    <VueValidators text="My text prop string"/>
-</template>
-```
-
-Outputs:
-
-```html
-<div>My text prop string</div>
-```
-
-::: warning
-If both the `text` prop and `slot` content are used, then the `text` prop takes precidence and the `slot` content will **NOT** render!
-:::
-
-
-
-
-## Slots
-
-
-
-
-### default
-
-```html{2-4}
-<template>
-    <VueValidators>
-        My slot content
-    </VueValidators>
-</template>
-```
-
-Outputs:
-
-```html
-<div>My slot content</div>
-```
-
-::: danger
-If both the `text` prop and `slot` content are used, then the `text` prop takes precidence and the `slot` content will **NOT** render!
-:::
 
 
 
