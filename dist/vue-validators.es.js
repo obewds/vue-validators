@@ -1,3 +1,10 @@
+var animationDirections = [
+  "up",
+  "down",
+  "left",
+  "right",
+  ""
+];
 var blockLevelElementTags = [
   "address",
   "article",
@@ -31,6 +38,15 @@ var blockLevelElementTags = [
   "section",
   "table",
   "ul"
+];
+var blockOrders = [
+  "bottom",
+  "top"
+];
+var buttonTypes = [
+  "button",
+  "submit",
+  "reset"
 ];
 var elementTags = [
   "style",
@@ -144,6 +160,37 @@ var emptyElementTags = [
   "track",
   "wbr"
 ];
+var fontAwesomeFamilies = [
+  "fab",
+  "fad",
+  "fal",
+  "far",
+  "fas",
+  "fat"
+];
+var fontAwesomeSizes = [
+  "xs",
+  "sm",
+  "1x",
+  "lg",
+  "2x",
+  "3x",
+  "4x",
+  "5x",
+  "6x",
+  "7x",
+  "8x",
+  "9x",
+  "10x"
+];
+var headingLevels = [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+];
 var inlineLevelElementTags = [
   "a",
   "abbr",
@@ -192,6 +239,40 @@ var inlineLevelElementTags = [
   "var",
   "video"
 ];
+var inputTypes = [
+  "color",
+  "date",
+  "datetime-local",
+  "email",
+  "month",
+  "number",
+  "password",
+  "search",
+  "tel",
+  "text",
+  "time",
+  "url"
+];
+var sourceAudioTypes = [
+  "audio/flac",
+  "audio/mp4",
+  "audio/mpeg",
+  "audio/ogg",
+  "audio/x-flac",
+  "audio/webm"
+];
+var sourceImageTypes = [
+  "image/gif",
+  "image/jpeg",
+  "image/png",
+  "image/svg+xml",
+  "image/webp"
+];
+var sourceVideoTypes = [
+  "video/mp4",
+  "video/ogg",
+  "video/webm"
+];
 var unsupportedElementTags = [
   "body",
   "head",
@@ -201,4 +282,4 @@ var unsupportedElementTags = [
   "slot",
   "template"
 ];
-export { blockLevelElementTags, elementTags, emptyElementTags, inlineLevelElementTags, unsupportedElementTags };
+export { animationDirections, blockLevelElementTags, blockOrders, buttonTypes, elementTags, emptyElementTags, fontAwesomeFamilies, fontAwesomeSizes, headingLevels, inlineLevelElementTags, inputTypes, sourceAudioTypes, sourceImageTypes, sourceVideoTypes, unsupportedElementTags };

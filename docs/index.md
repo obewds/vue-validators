@@ -81,9 +81,27 @@ npm install @obewds/vue-validators --save-dev
 
 
 
+### Animation Directions
+
+<<< @/../src/validators/animation-directions.ts
+
+
+
 ### Block-Level Element Tags
 
 <<< @/../src/validators/block-level-element-tags.ts
+
+
+
+### Block Orders
+
+<<< @/../src/validators/block-orders.ts
+
+
+
+### Button Types
+
+<<< @/../src/validators/button-types.ts
 
 
 
@@ -99,9 +117,51 @@ npm install @obewds/vue-validators --save-dev
 
 
 
+### FontAwesome Families
+
+<<< @/../src/validators/font-awesome-families.ts
+
+
+
+### FontAwesome Sizes
+
+<<< @/../src/validators/font-awesome-sizes.ts
+
+
+
+### Heading Levels
+
+<<< @/../src/validators/heading-levels.ts
+
+
+
 ### Inline-Level Element Tags
 
 <<< @/../src/validators/inline-level-element-tags.ts
+
+
+
+### Input Types
+
+<<< @/../src/validators/input-types.ts
+
+
+
+### Source Audio Types
+
+<<< @/../src/validators/source-audio-types.ts
+
+
+
+### Source Image Types
+
+<<< @/../src/validators/source-image-types.ts
+
+
+
+### Source Video Types
+
+<<< @/../src/validators/source-video-types.ts
 
 
 

@@ -1,7 +1,7 @@
 {
   "name": "@obewds/vue-validators",
   "description": "A collection of validation data sets to use with Vue.js component prop validation, tests, and design systems",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "@oberocks",
   "homepage": "https://github.com/obewds/vue-validators#readme",
   "license": "MIT",
