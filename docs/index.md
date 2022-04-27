@@ -6,7 +6,7 @@ head:
 ---
 
 
-# vue-validators
+# @obewds/vue-validators
 
 Welcome to the docs page for OBE:WDS's `vue-validators` data sets for [Vue.js](https://vuejs.org/)!
 
@@ -22,14 +22,14 @@ npm install @obewds/vue-validators --save-dev
 
 
 
-## Import Component
+## Importing/Using Validators
 
 
 
 
 ### Script setup syntax
 
-```html{3-7,10, 15}
+```html{3,12}
 <script setup lang="ts">
     // import a validator individually
     import { blockLevelElementTags } from '@obewds/vue-validators'
@@ -37,9 +37,6 @@ npm install @obewds/vue-validators --save-dev
     import { emptyElementTags } from '@obewds/vue-validators'
     import { inlineLevelElementTags } from '@obewds/vue-validators'
     import { unsupportedElementTags } from '@obewds/vue-validators'
-
-    // import validators together
-    import { blockLevelElementTags, elementTags, emptyElementTags, inlineLevelElementTags, unsupportedElementTags } from '@obewds/vue-validators'
 
     const props = defineProps({
         tag: {
@@ -55,10 +52,17 @@ npm install @obewds/vue-validators --save-dev
 
 ### Composition API syntax
 
-```html{3,6}
+```html{3-9,16}
 <script lang="ts">
+    // import validators together
+    import {
+        blockLevelElementTags,
+        elementTags,
+        emptyElementTags,
+        inlineLevelElementTags,
+        unsupportedElementTags
+    } from '@obewds/vue-validators'
     import { defineComponent } from 'vue'
-    import { elementTags } from '@obewds/vue-validators'
 
     export default defineComponent({
         props: {
@@ -70,6 +74,40 @@ npm install @obewds/vue-validators --save-dev
     })
 </script>
 ```
+
+
+
+## Validators
+
+
+
+### Block-Level Element Tags
+
+<<< @/../src/validators/block-level-element-tags.ts
+
+
+
+### Element Tags
+
+<<< @/../src/validators/element-tags.ts
+
+
+
+### Empty Element Tags
+
+<<< @/../src/validators/empty-element-tags.ts
+
+
+
+### Inline-Level Element Tags
+
+<<< @/../src/validators/inline-level-element-tags.ts
+
+
+
+### Unsupported Element Tags
+
+<<< @/../src/validators/unsupported-element-tags.ts
 
 
 
