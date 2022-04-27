@@ -1,4 +1,3 @@
-
 export default <string[]>[
     // HTML Main root element
     /*'html',*/ 

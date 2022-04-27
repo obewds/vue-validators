@@ -8,7 +8,7 @@ head:
 
 
 
-# vue-validators
+# @obewds/vue-validators
 
 
 
