@@ -31,7 +31,7 @@ npm install @obewds/vue-validators --save-dev
 
 ```html{3,12}
 <script setup lang="ts">
-    // import a validator individually
+    // examples of importing validators individually
     import { blockLevelElementTags } from '@obewds/vue-validators'
     import { elementTags } from '@obewds/vue-validators'
     import { emptyElementTags } from '@obewds/vue-validators'
@@ -54,7 +54,7 @@ npm install @obewds/vue-validators --save-dev
 
 ```html{3-9,16}
 <script lang="ts">
-    // import validators together
+    // an example of importing validators together
     import {
         blockLevelElementTags,
         elementTags,
