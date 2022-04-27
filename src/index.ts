@@ -1,1 +1,1 @@
-export { default as ViteVueTsCompoPkgStarter } from './components/ViteVueTsCompoPkgStarter.vue'
+export { default as VueValidators } from './components/VueValidators.vue'
