@@ -1,6 +1,6 @@
 # vue-validators
 
-A collection of validation data sets to use with Vue.js component prop validation, tests, and design systems
+The @obewds/vue-validators design system component for Vue.js
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/obewds/vue-validators?label=Github&logo=github&style=for-the-badge) &nbsp; ![npm](https://img.shields.io/npm/v/@obewds/vue-validators?color=%23cc3534&logo=npm&style=for-the-badge)
 
