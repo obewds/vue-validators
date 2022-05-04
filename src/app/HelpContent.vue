@@ -8,7 +8,8 @@
     import vueLogoSrc from '@/assets/vue-logo.png'
     import tsLogoSrc from '@/assets/typescript-logo.png'
     import obeLogoSrc from '@/assets/OBE-MARK-200x200.png'
-    import InitContent from '@/app/InitContent.vue'
+    
+
     // setup globals values
     const globals = inject('globals')
     
@@ -56,8 +57,6 @@
     <p class="text-xl pb-14">Component Package Dev Kit</p>
 
     <slot/>
-
-    <InitContent :class="[flexColSect, 'pt-14 px-4']"/>
 
     <div :class="[flexColSect, 'pt-14 pb-20 px-4']">
 
