@@ -13,6 +13,8 @@ The @obewds/vue-validators design system component for Vue.js
 
 Check out the [official docs](https://obewds.github.io/vue-validators/) for this component for more details!
 
+Or check out the [CHANGELOG](https://github.com/obewds/vue-validators/blob/main/CHANGELOG.md) for the code base!
+
 <br>
 
 
