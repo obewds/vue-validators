@@ -1,11 +1,10 @@
-var animationDirections = [
+const e = [
   "up",
   "down",
   "left",
   "right",
   ""
-];
-var blockLevelElementTags = [
+], t = [
   "address",
   "article",
   "aside",
@@ -38,17 +37,14 @@ var blockLevelElementTags = [
   "section",
   "table",
   "ul"
-];
-var blockOrders = [
+], a = [
   "bottom",
   "top"
-];
-var buttonTypes = [
+], o = [
   "button",
   "submit",
   "reset"
-];
-var elementTags = [
+], s = [
   "style",
   "title",
   "address",
@@ -142,8 +138,7 @@ var elementTags = [
   "details",
   "dialog",
   "summary"
-];
-var emptyElementTags = [
+], i = [
   "area",
   "base",
   "br",
@@ -159,16 +154,14 @@ var emptyElementTags = [
   "source",
   "track",
   "wbr"
-];
-var fontAwesomeFamilies = [
+], d = [
   "fab",
   "fad",
   "fal",
   "far",
   "fas",
   "fat"
-];
-var fontAwesomeSizes = [
+], r = [
   "xs",
   "sm",
   "1x",
@@ -182,16 +175,14 @@ var fontAwesomeSizes = [
   "8x",
   "9x",
   "10x"
-];
-var headingLevels = [
+], l = [
   1,
   2,
   3,
   4,
   5,
   6
-];
-var inlineLevelElementTags = [
+], n = [
   "a",
   "abbr",
   "acronym",
@@ -238,8 +229,7 @@ var inlineLevelElementTags = [
   "tt",
   "var",
   "video"
-];
-var inputTypes = [
+], m = [
   "color",
   "date",
   "datetime-local",
@@ -252,28 +242,24 @@ var inputTypes = [
   "text",
   "time",
   "url"
-];
-var sourceAudioTypes = [
+], c = [
   "audio/flac",
   "audio/mp4",
   "audio/mpeg",
   "audio/ogg",
   "audio/x-flac",
   "audio/webm"
-];
-var sourceImageTypes = [
+], p = [
   "image/gif",
   "image/jpeg",
   "image/png",
   "image/svg+xml",
   "image/webp"
-];
-var sourceVideoTypes = [
+], u = [
   "video/mp4",
   "video/ogg",
   "video/webm"
-];
-var unsupportedElementTags = [
+], b = [
   "body",
   "head",
   "html",
@@ -282,4 +268,20 @@ var unsupportedElementTags = [
   "slot",
   "template"
 ];
-export { animationDirections, blockLevelElementTags, blockOrders, buttonTypes, elementTags, emptyElementTags, fontAwesomeFamilies, fontAwesomeSizes, headingLevels, inlineLevelElementTags, inputTypes, sourceAudioTypes, sourceImageTypes, sourceVideoTypes, unsupportedElementTags };
+export {
+  e as animationDirections,
+  t as blockLevelElementTags,
+  a as blockOrders,
+  o as buttonTypes,
+  s as elementTags,
+  i as emptyElementTags,
+  d as fontAwesomeFamilies,
+  r as fontAwesomeSizes,
+  l as headingLevels,
+  n as inlineLevelElementTags,
+  m as inputTypes,
+  c as sourceAudioTypes,
+  p as sourceImageTypes,
+  u as sourceVideoTypes,
+  b as unsupportedElementTags
+};
