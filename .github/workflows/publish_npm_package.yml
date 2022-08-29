@@ -24,7 +24,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm install
-      # - run: npm pkg:org
+      # - run: npm run test
+      - run: npm run pkg:org
+      - run: npm run git:tag
       - uses: JS-DevTools/npm-publish@v1
         with:
           access: "public"
