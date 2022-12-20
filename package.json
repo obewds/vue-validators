@@ -37,7 +37,10 @@
     "pkg:publish": "npm publish --access public",
     "changelog": "auto-changelog --package --unreleased --backfill-limit 20",
     "git:tag": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag v$PACKAGE_VERSION && git push --tags",
-    "generate": "npx rimraf dist && npm run pkg:tsbundle && npm run changelog"
+    "generate": "npx rimraf dist && npm run pkg:tsbundle",
+    "bump:patch": "npm version patch && npm run generate && npm run changelog",
+    "bump:minor": "npm version minor && npm run generate && npm run changelog",
+    "bump:major": "npm version major && npm run generate && npm run changelog"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
