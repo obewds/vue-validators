@@ -1,7 +1,7 @@
 {
   "name": "@obewds/vue-validators",
   "description": "The @obewds/vue-validators design system component for Vue.js",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "author": "@oberocks",
   "homepage": "https://github.com/obewds/vue-validators#readme",
   "license": "MIT",
