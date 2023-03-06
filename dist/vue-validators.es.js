@@ -28,6 +28,7 @@ const e = [
   "h6",
   "header",
   "hgroup",
+  /*'hr',*/
   "li",
   "main",
   "nav",
@@ -45,8 +46,18 @@ const e = [
   "submit",
   "reset"
 ], s = [
+  // HTML Main root element
+  /*'html',*/
+  // HTML Document metadata elements
+  /*'base',*/
+  /*'head',*/
+  /*'link',*/
+  /*'meta',*/
   "style",
   "title",
+  // HTML Sectioning root element
+  /*'body',*/
+  // HTML Content sectioning elements
   "address",
   "article",
   "aside",
@@ -61,6 +72,7 @@ const e = [
   "main",
   "nav",
   "section",
+  // HTML Text content elements
   "blockquote",
   "dd",
   "div",
@@ -68,17 +80,20 @@ const e = [
   "dt",
   "figcaption",
   "figure",
+  /*'hr',*/
   "li",
   "menu",
   "ol",
   "p",
   "pre",
   "ul",
+  // HTML Inline text semantic elements
   "a",
   "abbr",
   "b",
   "bdi",
   "bdo",
+  /*'br',*/
   "cite",
   "code",
   "data",
@@ -101,19 +116,35 @@ const e = [
   "time",
   "u",
   "var",
+  /*'wbr',*/
+  // HTML Image and multimedia elements
+  /*'area',*/
   "audio",
+  /*'img',*/
   "map",
+  /*'track',*/
   "video",
+  // HTML Embedded content elements
+  /*'embed',*/
   "iframe",
   "object",
+  /*'param',*/
   "picture",
   "portal",
+  /*'source',*/
+  // HTML SVG and MathML elements
   "svg",
   "math",
+  // HTML Scripting  elements
   "canvas",
+  /*'noscript',*/
+  /*'script',*/
+  // HTML Demarcating edits elements
   "del",
   "ins",
+  // HTML Table content elements
   "caption",
+  /*'col',*/
   "colgroup",
   "table",
   "tbody",
@@ -122,10 +153,12 @@ const e = [
   "th",
   "thead",
   "tr",
+  // HTML Forms elements
   "button",
   "datalist",
   "fieldset",
   "form",
+  /*'input',*/
   "label",
   "legend",
   "meter",
@@ -135,9 +168,13 @@ const e = [
   "progress",
   "select",
   "textarea",
+  // HTML Interactive elements
   "details",
   "dialog",
   "summary"
+  // HTML Web Components elements
+  /*'slot',*/
+  /*'template',*/
 ], i = [
   "area",
   "base",
@@ -165,6 +202,7 @@ const e = [
   "xs",
   "sm",
   "1x",
+  // '1x' is effectively size 'md' - aka icon size inherits font size
   "lg",
   "2x",
   "3x",
@@ -187,10 +225,12 @@ const e = [
   "abbr",
   "acronym",
   "audio",
+  // if it has visible controls
   "b",
   "bdi",
   "bdo",
   "big",
+  /*'br',*/
   "button",
   "canvas",
   "cite",
@@ -200,14 +240,18 @@ const e = [
   "del",
   "dfn",
   "em",
+  /*'embed',*/
   "i",
   "iframe",
+  /*'img',*/
+  /*'input',*/
   "ins",
   "kbd",
   "label",
   "map",
   "mark",
   "meter",
+  /*'noscript',*/
   "object",
   "output",
   "picture",
@@ -216,32 +260,46 @@ const e = [
   "ruby",
   "s",
   "samp",
+  /*'script',*/
   "select",
+  /*'slot',*/
   "small",
   "span",
   "strong",
   "sub",
   "sup",
   "svg",
+  /*'template',*/
   "textarea",
   "time",
   "u",
   "tt",
   "var",
   "video"
+  /*'wbr',*/
 ], m = [
+  // 'button',
+  // 'checkbox',
   "color",
   "date",
   "datetime-local",
   "email",
+  // 'file',
+  // 'hidden',
+  // 'image',
   "month",
   "number",
   "password",
+  // 'radio',
+  // 'range',
+  // 'reset',
   "search",
+  // 'submit',
   "tel",
   "text",
   "time",
   "url"
+  // 'week',
 ], c = [
   "audio/flac",
   "audio/mp4",
